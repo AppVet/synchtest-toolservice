@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appvet:Tool xmlns:appvet="http://appvet.github.io/appvet/schemas"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://appvet.github.io/appvet/schemas ToolProperties.xsd ">
+	<appvet:Name>Android Signature Verifier</appvet:Name>
+	<appvet:Version>1.0</appvet:Version>
+	<appvet:ServiceURL>http://127.0.0.1:8080/android-synchtest-tool</appvet:ServiceURL>
+	<appvet:AppVetProtocol>SYNCHRONOUS</appvet:AppVetProtocol>
+	<appvet:AppOs>ANDROID</appvet:AppOs>
+	<appvet:KeepApps>false</appvet:KeepApps>
+	<appvet:Command>sleep</appvet:Command>
+	<appvet:CommandTimeout>120000</appvet:CommandTimeout>
+	<appvet:Logging>
+		<appvet:Level>INFO</appvet:Level>
+		<appvet:ToConsole>false</appvet:ToConsole>
+		<appvet:LogName>log.txt</appvet:LogName>
+	</appvet:Logging>
+	<appvet:Report>
+		<appvet:Format>HTML</appvet:Format>
+		<appvet:Result>
+			<appvet:DefaultStatus>LOW</appvet:DefaultStatus>
+		</appvet:Result>
+	</appvet:Report>
+	<appvet:AppVet>
+		<appvet:URL>http://127.0.0.1:8080/appvet/AppVetServlet</appvet:URL>
+		<appvet:Method>POST</appvet:Method>
+		<appvet:ToolId>synchtest</appvet:ToolId>
+		<appvet:Username>synchtest</appvet:Username>
+		<appvet:Password>synchtest123</appvet:Password>
+	</appvet:AppVet>
+</appvet:Tool>
