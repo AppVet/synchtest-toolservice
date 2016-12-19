@@ -217,7 +217,7 @@ public class Service extends HttpServlet {
 		// Send report to AppVet
 		if (Properties.protocol.equals(Protocol.SYNCHRONOUS.name())) {
 			// Send back ASCII in HTTP Response
-			ReportUtil.sendInHttpResponse(response, reportContent, risk);
+			ReportUtil.sendPDFInHttpResponse(response, reportContent, risk);
 		} 
 
 		// Clean up
